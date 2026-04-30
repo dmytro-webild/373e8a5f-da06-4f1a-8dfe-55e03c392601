@@ -35,6 +35,7 @@ export default function LandingPage() {
         { name: "Inicio", id: "hero" },
         { name: "Servicios", id: "services" },
         { name: "Equipo", id: "team" },
+        { name: "FAQ", id: "faq" },
         { name: "Contacto", id: "contact" },
       ]}
       brandName="Palancar Barbershop"
@@ -131,12 +132,13 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       faqs={[
-        { id: "q1", title: "¿Necesito una cita?", content: "Sí, recomendamos altamente reservar en línea o llamarnos." },
-        { id: "q2", title: "¿Aceptan walk-ins?", content: "Priorizamos las citas, pero aceptamos walk-ins según disponibilidad." },
-        { id: "q3", title: "¿Dónde están ubicados?", content: "Estamos ubicados en el corazón de Hialeah, Miami." },
+        { id: "q1", title: "¿Necesito una cita previa?", content: "Sí, recomendamos altamente reservar en línea para garantizar su turno." },
+        { id: "q2", title: "¿Cuál es su horario en Hialeah?", content: "Atendemos de lunes a sábado desde las 9:00 AM hasta las 7:00 PM." },
+        { id: "q3", title: "¿Qué métodos de pago aceptan?", content: "Aceptamos efectivo, tarjetas de crédito y aplicaciones de pago móvil." },
+        { id: "q4", title: "¿Realizan cortes para niños?", content: "Sí, ofrecemos cortes especializados para niños con total paciencia y cuidado." },
       ]}
       title="Preguntas Frecuentes"
-      description="Dudas comunes sobre nuestros servicios de barbería."
+      description="Todo lo que necesitas saber antes de tu visita a nuestra barbería en Miami."
       faqsAnimation="slide-up"
     />
   </div>
@@ -146,10 +148,10 @@ export default function LandingPage() {
       useInvertedBackground={false}
       background={{ variant: "plain" }}
       tag="Contacto"
-      title="Agenda tu Cita Hoy"
-      description="Ubicados en Hialeah, Miami. Estamos listos para atenderle. ¡Contáctenos ahora!"
+      title="Agenda tu Cita en Hialeah"
+      description="Estamos ubicados en Hialeah, Miami. Reserva tu espacio y transforma tu estilo con los mejores profesionales."
       mediaAnimation="slide-up"
-      buttonText="Enviar"
+      buttonText="Enviar mensaje"
       imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=2"
     />
   </div>

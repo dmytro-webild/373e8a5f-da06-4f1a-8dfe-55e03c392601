@@ -10,7 +10,7 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User } from "lucide-react";
+import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User, Phone } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -66,7 +66,7 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       features={[
-        { icon: Scissors, title: "Corte de Pelo", description: "Desde $25" },
+        { icon: Scissors, title: "Corte de Pelo", description: "$25" },
         { icon: Sparkles, title: "Cortes", description: "$15" },
         { icon: Droplets, title: "Lavado de Cabeza", description: "$10" },
         { icon: Zap, title: "Afeitado", description: "$10" },
@@ -85,10 +85,16 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "p1", badge: "Disponible", price: "$25", subtitle: "Corte de Pelo", buttons: [{ text: "Reservar 305-824-9966", href: "tel:3058249966" }], features: ["Fade", "Estilo", "Lavado"] }
+        { id: "p1", badge: "Corte", price: "$25", subtitle: "Corte de Pelo", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
+        { id: "p2", badge: "Cortes", price: "$15", subtitle: "Cortes", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
+        { id: "p3", badge: "Lavado", price: "$10", subtitle: "Lavado de Cabeza", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
+        { id: "p4", badge: "Afeitado", price: "$10", subtitle: "Afeitado", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
+        { id: "p5", badge: "Barba", price: "$20", subtitle: "Barba", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
+        { id: "p6", badge: "Candado", price: "$10", subtitle: "Candado", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
+        { id: "p7", badge: "Cejas", price: "$10", subtitle: "Cejas", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
       ]}
       title="Menú de Precios"
-      description="Llame para su próxima cita."
+      description="Servicios de calidad para ti."
     />
   </div>
 
@@ -99,7 +105,7 @@ export default function LandingPage() {
       faqs={[
         { id: "q1", title: "¿Cuál es su dirección?", content: "4955 West 6th Ave, Hialeah, FL 33012" },
         { id: "q2", title: "¿Cuál es su horario?", content: "Lunes a Sábados 9:00 AM - 7:00 PM" },
-        { id: "q3", title: "¿Teléfonos de contacto?", content: "305-824-9966 / 786-302-3671" },
+        { id: "q3", title: "¿Teléfonos de contacto?", content: "305-824-9966 Oficina / 786-302-3671 Celular" },
       ]}
       title="Información de Contacto"
       description="Llame para su próxima cita."
@@ -112,8 +118,8 @@ export default function LandingPage() {
       useInvertedBackground={false}
       background={{ variant: "plain" }}
       tag="Contacto"
-      title="Llame para su próxima cita"
-      description="4955 West 6th Ave, Hialeah, FL 33012 | 305-824-9966"
+      title="Contáctanos hoy"
+      description="Llámanos a nuestros números de atención: 305-824-9966 (Oficina) y 786-302-3671 (Celular)."
       mediaAnimation="slide-up"
       imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=2"
     />
@@ -121,10 +127,10 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterCard
-      logoText="Palancar Barbershop"
-      copyrightText="© 2025 Palancar Barbershop. Llame al 305-824-9966"
+      logoText=""
+      copyrightText="© 2025 Palancar Barbershop."
       socialLinks={[
-        { icon: Instagram, href: "#", ariaLabel: "Instagram" },
+        { icon: Instagram, href: "https://instagram.com", ariaLabel: "Instagram" },
       ]}
     />
   </div>

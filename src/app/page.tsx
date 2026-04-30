@@ -3,16 +3,14 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
 import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
-import TeamCardSix from '@/components/sections/team/TeamCardSix';
-import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
-import { Diamond, Instagram, Scissors, User } from "lucide-react";
+import FaqBase from '@/components/sections/faq/FaqBase';
+import { Instagram } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -34,12 +32,11 @@ export default function LandingPage() {
       navItems={[
         { name: "Inicio", id: "hero" },
         { name: "Servicios", id: "services" },
-        { name: "Equipo", id: "team" },
-        { name: "FAQ", id: "faq" },
+        { name: "Precios", id: "menu" },
         { name: "Contacto", id: "contact" },
       ]}
       brandName="Palancar Barbershop"
-      button={{ text: "Reservar" }}
+      button={{ text: "305-824-9966", href: "tel:3058249966" }}
     />
   </div>
 
@@ -47,7 +44,7 @@ export default function LandingPage() {
       <HeroLogo
       logoText="Palancar Barbershop"
       description="Corte premium en el corazón de Hialeah. Mejore su estilo con maestros del oficio. Servicio de barbería diseñado para el hombre moderno."
-      buttons={[{ text: "Reservar Cita", href: "#contact" }]}
+      buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
       imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=1"
       imageAlt="interior moderno de barbería"
     />
@@ -69,12 +66,16 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       features={[
-        { icon: Scissors, title: "Fade & Corte Personalizado", description: "Fades de precisión y estilos a medida para usted." },
-        { icon: Diamond, title: "Cuidado de Barba", description: "Recorte y mantenimiento profesional para su barba." },
-        { icon: User, title: "Grooming Completo", description: "Servicio integral diseñado para el hombre actual." },
+        { icon: () => <></>, title: "Corte de Pelo", description: "Desde $25" },
+        { icon: () => <></>, title: "Cortes", description: "$15" },
+        { icon: () => <></>, title: "Lavado de Cabeza", description: "$10" },
+        { icon: () => <></>, title: "Afeitado", description: "$10" },
+        { icon: () => <></>, title: "Barba", description: "$20" },
+        { icon: () => <></>, title: "Candado", description: "$10" },
+        { icon: () => <></>, title: "Cejas", description: "$10" },
       ]}
       title="Nuestros Servicios"
-      description="Servicios de barbería expertos para resaltar su imagen única."
+      description="Servicios de barbería profesionales."
     />
   </div>
 
@@ -84,46 +85,10 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Popular", price: "$25", subtitle: "Mantenimiento de Barba", buttons: [{ text: "Reservar", href: "#contact" }], features: ["Recorte", "Perfilado", "Aceite"] },
-        { id: "standard", badge: "Recomendado", price: "$35", subtitle: "Corte y Fade Premium", buttons: [{ text: "Reservar", href: "#contact" }], features: ["Fade Clásico", "Taper", "Estilizado"] },
-        { id: "full", badge: "Elite", price: "$50", subtitle: "Grooming Total", buttons: [{ text: "Reservar", href: "#contact" }], features: ["Corte Completo", "Barba", "Cejas", "Estilizado"] },
+        { id: "p1", badge: "Disponible", price: "$25", subtitle: "Corte de Pelo", buttons: [{ text: "Reservar 305-824-9966", href: "tel:3058249966" }], features: ["Fade", "Estilo", "Lavado"] }
       ]}
       title="Menú de Precios"
-      description="Tarifas transparentes por resultados excepcionales."
-    />
-  </div>
-
-  <div id="team" data-section="team">
-      <TeamCardSix
-      animationType="slide-up"
-      textboxLayout="default"
-      gridVariant="uniform-all-items-equal"
-      useInvertedBackground={false}
-      members={[
-        { id: "m1", name: "Carlos R.", role: "Maestro Barbero", imageSrc: "http://img.b2bpic.net/free-photo/positive-bearded-black-male-with-tattoo-cross-arms-dressed-white-shirt_613910-15917.jpg" },
-        { id: "m2", name: "Luis M.", role: "Experto en Fades", imageSrc: "http://img.b2bpic.net/free-photo/gardening-tools_23-2148013407.jpg" },
-        { id: "m3", name: "Juan P.", role: "Especialista en Estilo", imageSrc: "http://img.b2bpic.net/free-photo/portrait-man-with-tattoo-his-face-with-crossed-arms-dressed-white-shirt-grey-background_613910-8120.jpg" },
-        { id: "m4", name: "Diego V.", role: "Barbero Senior", imageSrc: "http://img.b2bpic.net/free-photo/man-looking-away-barber-shop_23-2148353460.jpg" },
-      ]}
-      title="Nuestro Equipo"
-      description="Conozca a nuestros barberos profesionales en Hialeah."
-    />
-  </div>
-
-  <div id="testimonials" data-section="testimonials">
-      <TestimonialCardOne
-      animationType="slide-up"
-      textboxLayout="default"
-      gridVariant="uniform-all-items-equal"
-      useInvertedBackground={false}
-      testimonials={[
-        { id: "t1", name: "Antonio S.", role: "Cliente Frecuente", company: "Hialeah", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/close-up-smiling-young-man-with-headphone-around-his-neck-looking-camera_23-2148042690.jpg" },
-        { id: "t2", name: "Mario F.", role: "Empresario", company: "Miami", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-redhead-model-man-flannel-shirt-gray-background_613910-20187.jpg" },
-        { id: "t3", name: "Jorge L.", role: "Profesional", company: "Hialeah", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/handsome-young-bearded-man-smiling-looking-away-while-professional-barber-giving-him-haircut-copyspace_7502-5640.jpg" },
-        { id: "t4", name: "Pedro G.", role: "Residente Local", company: "Miami", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/client-hairdresser-posing-selfie_23-2147778771.jpg" },
-      ]}
-      title="Reseñas de Clientes"
-      description="Vea por qué nuestros clientes confían en Palancar Barbershop."
+      description="Llame para su próxima cita."
     />
   </div>
 
@@ -132,13 +97,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       faqs={[
-        { id: "q1", title: "¿Necesito una cita previa?", content: "Sí, recomendamos altamente reservar en línea para garantizar su turno." },
-        { id: "q2", title: "¿Cuál es su horario en Hialeah?", content: "Atendemos de lunes a sábado desde las 9:00 AM hasta las 7:00 PM." },
-        { id: "q3", title: "¿Qué métodos de pago aceptan?", content: "Aceptamos efectivo, tarjetas de crédito y aplicaciones de pago móvil." },
-        { id: "q4", title: "¿Realizan cortes para niños?", content: "Sí, ofrecemos cortes especializados para niños con total paciencia y cuidado." },
+        { id: "q1", title: "¿Cuál es su dirección?", content: "4955 West 6th Ave, Hialeah, FL 33012" },
+        { id: "q2", title: "¿Cuál es su horario?", content: "Lunes a Sábados 9:00 AM - 7:00 PM" },
+        { id: "q3", title: "¿Teléfonos de contacto?", content: "305-824-9966 / 786-302-3671" },
       ]}
-      title="Preguntas Frecuentes"
-      description="Todo lo que necesitas saber antes de tu visita a nuestra barbería en Miami."
+      title="Información de Contacto"
+      description="Llame para su próxima cita."
       faqsAnimation="slide-up"
     />
   </div>
@@ -148,10 +112,10 @@ export default function LandingPage() {
       useInvertedBackground={false}
       background={{ variant: "plain" }}
       tag="Contacto"
-      title="Agenda tu Cita en Hialeah"
-      description="Estamos ubicados en Hialeah, Miami. Reserva tu espacio y transforma tu estilo con los mejores profesionales."
+      title="Llame para su próxima cita"
+      description="4955 West 6th Ave, Hialeah, FL 33012 | 305-824-9966"
       mediaAnimation="slide-up"
-      buttonText="Enviar mensaje"
+      buttonText="305-824-9966"
       imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=2"
     />
   </div>
@@ -159,7 +123,7 @@ export default function LandingPage() {
   <div id="footer" data-section="footer">
       <FooterCard
       logoText="Palancar Barbershop"
-      copyrightText="© 2025 Palancar Barbershop. Todos los derechos reservados."
+      copyrightText="© 2025 Palancar Barbershop. Llame al 305-824-9966"
       socialLinks={[
         { icon: Instagram, href: "#", ariaLabel: "Instagram" },
       ]}

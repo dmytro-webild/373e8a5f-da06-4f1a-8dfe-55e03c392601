@@ -10,7 +10,7 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import { Instagram } from "lucide-react";
+import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -66,13 +66,13 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       features={[
-        { icon: () => <></>, title: "Corte de Pelo", description: "Desde $25" },
-        { icon: () => <></>, title: "Cortes", description: "$15" },
-        { icon: () => <></>, title: "Lavado de Cabeza", description: "$10" },
-        { icon: () => <></>, title: "Afeitado", description: "$10" },
-        { icon: () => <></>, title: "Barba", description: "$20" },
-        { icon: () => <></>, title: "Candado", description: "$10" },
-        { icon: () => <></>, title: "Cejas", description: "$10" },
+        { icon: Scissors, title: "Corte de Pelo", description: "Desde $25" },
+        { icon: Sparkles, title: "Cortes", description: "$15" },
+        { icon: Droplets, title: "Lavado de Cabeza", description: "$10" },
+        { icon: Zap, title: "Afeitado", description: "$10" },
+        { icon: User, title: "Barba", description: "$20" },
+        { icon: Scissors, title: "Candado", description: "$10" },
+        { icon: Eye, title: "Cejas", description: "$10" },
       ]}
       title="Nuestros Servicios"
       description="Servicios de barbería profesionales."
@@ -115,7 +115,6 @@ export default function LandingPage() {
       title="Llame para su próxima cita"
       description="4955 West 6th Ave, Hialeah, FL 33012 | 305-824-9966"
       mediaAnimation="slide-up"
-      buttonText="305-824-9966"
       imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=2"
     />
   </div>

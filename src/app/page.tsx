@@ -54,7 +54,7 @@ export default function LandingPage() {
         {
           text: "Reservar Cita",          href: "#contact"},
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=1"
       imageAlt="luxury barbershop interior modern"
     />
   </div>
@@ -205,7 +205,7 @@ export default function LandingPage() {
       description="Ready to look your best? Reach out to us now."
       mediaAnimation="slide-up"
       buttonText="Enviar"
-      imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=2"
     />
   </div>
 

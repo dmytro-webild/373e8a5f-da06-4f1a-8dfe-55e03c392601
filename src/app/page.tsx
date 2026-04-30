@@ -212,7 +212,7 @@ export default function LandingPage() {
   <div id="footer" data-section="footer">
       <FooterCard
       logoText="Palancar Barbershop"
-      copyrightText="© 2025 Palancar Barbershop. All rights reserved."
+      copyrightText="© 2025 Palancar Barbershop. Todos los derechos reservados."
       socialLinks={[
         {
           icon: Instagram,

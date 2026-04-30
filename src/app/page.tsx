@@ -32,14 +32,10 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingInline
       navItems={[
-        {
-          name: "Inicio",          id: "hero"},
-        {
-          name: "Servicios",          id: "services"},
-        {
-          name: "Equipo",          id: "team"},
-        {
-          name: "Contacto",          id: "contact"},
+        { name: "Inicio", id: "hero" },
+        { name: "Servicios", id: "services" },
+        { name: "Equipo", id: "team" },
+        { name: "Contacto", id: "contact" },
       ]}
       brandName="Palancar Barbershop"
       button={{ text: "Reservar" }}
@@ -49,13 +45,10 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroLogo
       logoText="Palancar Barbershop"
-      description="Premium grooming in the heart of Hialeah. Elevate your style with masters of the craft. Grooming for the modern man. \n\nCorte premium en el corazón de Hialeah. Mejore su estilo con maestros del oficio."
-      buttons={[
-        {
-          text: "Reservar Cita",          href: "#contact"},
-      ]}
+      description="Corte premium en el corazón de Hialeah. Mejore su estilo con maestros del oficio. Servicio de barbería diseñado para el hombre moderno."
+      buttons={[{ text: "Reservar Cita", href: "#contact" }]}
       imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=1"
-      imageAlt="luxury barbershop interior modern"
+      imageAlt="interior moderno de barbería"
     />
   </div>
 
@@ -63,10 +56,8 @@ export default function LandingPage() {
       <InlineImageSplitTextAbout
       useInvertedBackground={false}
       heading={[
-        {
-          type: "text",          content: "Tradición y Estilo Superior"},
-        {
-          type: "image",          src: "http://img.b2bpic.net/free-photo/from-hands-shaving-neck_23-2147778916.jpg",          alt: "professional barber grooming client"},
+        { type: "text", content: "Tradición y Estilo Superior" },
+        { type: "image", src: "http://img.b2bpic.net/free-photo/from-hands-shaving-neck_23-2147778916.jpg", alt: "barbero profesional cuidando al cliente" },
       ]}
     />
   </div>
@@ -77,18 +68,12 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       features={[
-        {
-          icon: Scissors,
-          title: "Fade & Custom Cut",          description: "Precision fades and custom styles tailored to you."},
-        {
-          icon: Diamond,
-          title: "Beard Grooming",          description: "Expert beard trimming and maintenance."},
-        {
-          icon: User,
-          title: "Full Grooming",          description: "Complete service for the modern man."},
+        { icon: Scissors, title: "Fade & Corte Personalizado", description: "Fades de precisión y estilos a medida para usted." },
+        { icon: Diamond, title: "Cuidado de Barba", description: "Recorte y mantenimiento profesional para su barba." },
+        { icon: User, title: "Grooming Completo", description: "Servicio integral diseñado para el hombre actual." },
       ]}
       title="Nuestros Servicios"
-      description="Expert grooming services designed for your unique look."
+      description="Servicios de barbería expertos para resaltar su imagen única."
     />
   </div>
 
@@ -98,33 +83,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        {
-          id: "basic",          badge: "Popular",          price: "$25",          subtitle: "Beard Maintenance",          buttons: [
-            {
-              text: "Book",              href: "#contact"},
-          ],
-          features: [
-            "Trimming",            "Shaping",            "Oiling"],
-        },
-        {
-          id: "standard",          badge: "Best Value",          price: "$35",          subtitle: "Premium Fade Cut",          buttons: [
-            {
-              text: "Book",              href: "#contact"},
-          ],
-          features: [
-            "Classic Fade",            "Taper",            "Styling"],
-        },
-        {
-          id: "full",          badge: "Elite",          price: "$50",          subtitle: "Full Grooming",          buttons: [
-            {
-              text: "Book",              href: "#contact"},
-          ],
-          features: [
-            "Full Cut",            "Beard Trim",            "Eyebrows",            "Style"],
-        },
+        { id: "basic", badge: "Popular", price: "$25", subtitle: "Mantenimiento de Barba", buttons: [{ text: "Reservar", href: "#contact" }], features: ["Recorte", "Perfilado", "Aceite"] },
+        { id: "standard", badge: "Recomendado", price: "$35", subtitle: "Corte y Fade Premium", buttons: [{ text: "Reservar", href: "#contact" }], features: ["Fade Clásico", "Taper", "Estilizado"] },
+        { id: "full", badge: "Elite", price: "$50", subtitle: "Grooming Total", buttons: [{ text: "Reservar", href: "#contact" }], features: ["Corte Completo", "Barba", "Cejas", "Estilizado"] },
       ]}
-      title="Precios / Menu"
-      description="Transparent pricing for exceptional results."
+      title="Menú de Precios"
+      description="Tarifas transparentes por resultados excepcionales."
     />
   </div>
 
@@ -135,17 +99,13 @@ export default function LandingPage() {
       gridVariant="uniform-all-items-equal"
       useInvertedBackground={false}
       members={[
-        {
-          id: "m1",          name: "Carlos R.",          role: "Master Barber",          imageSrc: "http://img.b2bpic.net/free-photo/positive-bearded-black-male-with-tattoo-cross-arms-dressed-white-shirt_613910-15917.jpg"},
-        {
-          id: "m2",          name: "Luis M.",          role: "Fade Expert",          imageSrc: "http://img.b2bpic.net/free-photo/gardening-tools_23-2148013407.jpg"},
-        {
-          id: "m3",          name: "Juan P.",          role: "Grooming Specialist",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-man-with-tattoo-his-face-with-crossed-arms-dressed-white-shirt-grey-background_613910-8120.jpg"},
-        {
-          id: "m4",          name: "Diego V.",          role: "Senior Barber",          imageSrc: "http://img.b2bpic.net/free-photo/man-looking-away-barber-shop_23-2148353460.jpg"},
+        { id: "m1", name: "Carlos R.", role: "Maestro Barbero", imageSrc: "http://img.b2bpic.net/free-photo/positive-bearded-black-male-with-tattoo-cross-arms-dressed-white-shirt_613910-15917.jpg" },
+        { id: "m2", name: "Luis M.", role: "Experto en Fades", imageSrc: "http://img.b2bpic.net/free-photo/gardening-tools_23-2148013407.jpg" },
+        { id: "m3", name: "Juan P.", role: "Especialista en Estilo", imageSrc: "http://img.b2bpic.net/free-photo/portrait-man-with-tattoo-his-face-with-crossed-arms-dressed-white-shirt-grey-background_613910-8120.jpg" },
+        { id: "m4", name: "Diego V.", role: "Barbero Senior", imageSrc: "http://img.b2bpic.net/free-photo/man-looking-away-barber-shop_23-2148353460.jpg" },
       ]}
       title="Nuestro Equipo"
-      description="Meet our professional barbers in Hialeah."
+      description="Conozca a nuestros barberos profesionales en Hialeah."
     />
   </div>
 
@@ -156,24 +116,13 @@ export default function LandingPage() {
       gridVariant="uniform-all-items-equal"
       useInvertedBackground={false}
       testimonials={[
-        {
-          id: "t1",          name: "Antonio S.",          role: "Regular Client",          company: "Hialeah",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-smiling-young-man-with-headphone-around-his-neck-looking-camera_23-2148042690.jpg"},
-        {
-          id: "t2",          name: "Mario F.",          role: "Business Owner",          company: "Miami",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-redhead-model-man-flannel-shirt-gray-background_613910-20187.jpg"},
-        {
-          id: "t3",          name: "Jorge L.",          role: "Professional",          company: "Hialeah",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/handsome-young-bearded-man-smiling-looking-away-while-professional-barber-giving-him-haircut-copyspace_7502-5640.jpg"},
-        {
-          id: "t4",          name: "Pedro G.",          role: "Local Resident",          company: "Miami",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/client-hairdresser-posing-selfie_23-2147778771.jpg"},
-        {
-          id: "t5",          name: "Ramon C.",          role: "Frequent Client",          company: "Hialeah",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/crop-barber-combing-moustache-client_23-2147778841.jpg"},
+        { id: "t1", name: "Antonio S.", role: "Cliente Frecuente", company: "Hialeah", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/close-up-smiling-young-man-with-headphone-around-his-neck-looking-camera_23-2148042690.jpg" },
+        { id: "t2", name: "Mario F.", role: "Empresario", company: "Miami", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-redhead-model-man-flannel-shirt-gray-background_613910-20187.jpg" },
+        { id: "t3", name: "Jorge L.", role: "Profesional", company: "Hialeah", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/handsome-young-bearded-man-smiling-looking-away-while-professional-barber-giving-him-haircut-copyspace_7502-5640.jpg" },
+        { id: "t4", name: "Pedro G.", role: "Residente Local", company: "Miami", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/client-hairdresser-posing-selfie_23-2147778771.jpg" },
       ]}
       title="Reseñas de Clientes"
-      description="See why our customers trust Palancar Barbershop."
+      description="Vea por qué nuestros clientes confían en Palancar Barbershop."
     />
   </div>
 
@@ -182,15 +131,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       faqs={[
-        {
-          id: "q1",          title: "Do I need an appointment?",          content: "Yes, we highly recommend booking online or calling."},
-        {
-          id: "q2",          title: "Do you offer walk-ins?",          content: "We prioritize appointments, but accept walk-ins when available."},
-        {
-          id: "q3",          title: "Where are you located?",          content: "We are located in Hialeah, Miami."},
+        { id: "q1", title: "¿Necesito una cita?", content: "Sí, recomendamos altamente reservar en línea o llamarnos." },
+        { id: "q2", title: "¿Aceptan walk-ins?", content: "Priorizamos las citas, pero aceptamos walk-ins según disponibilidad." },
+        { id: "q3", title: "¿Dónde están ubicados?", content: "Estamos ubicados en el corazón de Hialeah, Miami." },
       ]}
       title="Preguntas Frecuentes"
-      description="Frequently asked questions about our grooming services."
+      description="Dudas comunes sobre nuestros servicios de barbería."
       faqsAnimation="slide-up"
     />
   </div>
@@ -198,11 +144,10 @@ export default function LandingPage() {
   <div id="contact" data-section="contact">
       <ContactSplit
       useInvertedBackground={false}
-      background={{
-        variant: "plain"}}
+      background={{ variant: "plain" }}
       tag="Contacto"
       title="Agenda tu Cita Hoy"
-      description="Ready to look your best? Reach out to us now."
+      description="Ubicados en Hialeah, Miami. Estamos listos para atenderle. ¡Contáctenos ahora!"
       mediaAnimation="slide-up"
       buttonText="Enviar"
       imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=2"
@@ -214,9 +159,7 @@ export default function LandingPage() {
       logoText="Palancar Barbershop"
       copyrightText="© 2025 Palancar Barbershop. Todos los derechos reservados."
       socialLinks={[
-        {
-          icon: Instagram,
-          href: "#",          ariaLabel: "Instagram"},
+        { icon: Instagram, href: "#", ariaLabel: "Instagram" },
       ]}
     />
   </div>

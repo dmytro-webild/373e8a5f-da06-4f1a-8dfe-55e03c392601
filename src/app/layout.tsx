@@ -10,8 +10,8 @@ import { DM_Sans } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'Palancar Barbershop | Hialeah, Miami',
-  description: 'Premium grooming and barber services in Hialeah. Expert fades, beard trims, and more.',
+  title: 'Palancar Barbershop | Hialeah',
+  description: 'Servicio de barbería premium en Hialeah.',
   openGraph: {
     "title": "Palancar Barbershop | Hialeah, Miami",
     "description": "Premium grooming and barber services in Hialeah.",

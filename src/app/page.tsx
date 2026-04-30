@@ -3,6 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
+import ContactText from '@/components/sections/contact/ContactText';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroLogo from '@/components/sections/hero/HeroLogo';
@@ -110,6 +111,18 @@ export default function LandingPage() {
       title="Información de Contacto"
       description="Llame para su próxima cita."
       faqsAnimation="slide-up"
+    />
+  </div>
+
+  <div id="contact-text" data-section="contact-text">
+    <ContactText 
+      text="¿Listo para tu próximo corte? Llámanos hoy."
+      buttons={[
+        { text: "305-824-9966 (Oficina)", href: "tel:3058249966" },
+        { text: "786-302-3671 (Celular)", href: "tel:7863023671" }
+      ]}
+      background={{ variant: "sparkles-gradient" }}
+      useInvertedBackground={true}
     />
   </div>
 

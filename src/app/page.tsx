@@ -59,6 +59,7 @@ export default function LandingPage() {
         { type: "text", content: "Tradición y Estilo Superior" },
         { type: "image", src: "http://img.b2bpic.net/free-photo/from-hands-shaving-neck_23-2147778916.jpg", alt: "barbero profesional cuidando al cliente" },
       ]}
+      buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
     />
   </div>
 
@@ -68,13 +69,13 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       features={[
-        { icon: Scissors, title: "Corte de Pelo", description: "$25" },
-        { icon: Sparkles, title: "Cortes", description: "$15" },
-        { icon: Droplets, title: "Lavado de Cabeza", description: "$10" },
-        { icon: Zap, title: "Afeitado", description: "$10" },
-        { icon: User, title: "Barba", description: "$20" },
-        { icon: Scissors, title: "Candado", description: "$10" },
-        { icon: Eye, title: "Cejas", description: "$10" },
+        { icon: Scissors, title: "Corte de Pelo", description: "$25", button: { text: "Llamar", href: "tel:3058249966" } },
+        { icon: Sparkles, title: "Cortes", description: "$15", button: { text: "Llamar", href: "tel:3058249966" } },
+        { icon: Droplets, title: "Lavado de Cabeza", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
+        { icon: Zap, title: "Afeitado", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
+        { icon: User, title: "Barba", description: "$20", button: { text: "Llamar", href: "tel:3058249966" } },
+        { icon: Scissors, title: "Candado", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
+        { icon: Eye, title: "Cejas", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
       ]}
       title="Nuestros Servicios"
       description="Servicios de barbería profesionales."
@@ -113,6 +114,7 @@ export default function LandingPage() {
       title="Información de Contacto"
       description="Llame para su próxima cita."
       faqsAnimation="slide-up"
+      buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
     />
   </div>
 
@@ -133,7 +135,7 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterCard
-      logoText=""
+      logoText="Palancar Barbershop"
       copyrightText="© 2025 Palancar Barbershop."
       socialLinks={[
         { icon: Instagram, href: "https://instagram.com", ariaLabel: "Instagram" },

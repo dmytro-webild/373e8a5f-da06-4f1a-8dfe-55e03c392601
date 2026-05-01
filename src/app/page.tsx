@@ -135,6 +135,8 @@ export default function LandingPage() {
       description="Llámanos a nuestros números de atención: 305-824-9966 (Oficina) y 786-302-3671 (Celular)."
       mediaAnimation="slide-up"
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777594381425-5bkzkhum.jpg"
+      containerClassName="p-0 m-0"
+      contentClassName="p-0"
     />
   </div>
 

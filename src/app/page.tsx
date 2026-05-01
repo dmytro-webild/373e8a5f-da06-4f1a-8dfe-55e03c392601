@@ -83,7 +83,7 @@ export default function LandingPage() {
             groupTitle: "Master Barbers", 
             members: [
                 { id: "carlos", title: "Carlos Palancar", subtitle: "Master Barber", detail: "Experto en cortes clásicos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-le45q4xz.png?_wi=1" },
-                { id: "erick", title: "Erick Cabrera", subtitle: "Master Barbero", detail: "Especialista en degradados", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-le45q4xz.png?_wi=2" },
+                { id: "erick", title: "Erick Cabrera", subtitle: "Master Barbero", detail: "Especialista en degradados", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-018sp65s.png" },
                 { id: "carlosjr", title: "Carlos Palancar Jr.", subtitle: "Master Barbero", detail: "Estilista versátil", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-zt0ail6t.png" },
                 { id: "brian", title: "Brian Teran", subtitle: "Master Barbero", detail: "Técnico de barba", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-le45q4xz.png?_wi=4" },
                 { id: "jose", title: "Jose Fernandez", subtitle: "Master Barbero", detail: "Cortes modernos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-le45q4xz.png?_wi=5" },

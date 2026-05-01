@@ -6,6 +6,7 @@ import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { DM_Sans } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 
 
 
@@ -20,12 +21,9 @@ export const metadata: Metadata = {
   },
 };
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-});
-const inter = Inter({
-  variable: "--font-inter",
+
+const sourceSans3 = Source_Sans_3({
+  variable: "--font-source-sans-3",
   subsets: ["latin"],
 });
 
@@ -37,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
+        <body className={`${sourceSans3.variable} antialiased`}>
           
           {children}
           <script

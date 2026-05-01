@@ -87,7 +87,7 @@ export default function LandingPage() {
                 { id: "carlosjr", title: "Carlos Palancar Jr.", subtitle: "Master Barbero", detail: "Estilista versátil" },
                 { id: "brian", title: "Brian Teran", subtitle: "Master Barbero", detail: "Técnico de barba" },
                 { id: "jose", title: "Jose Fernandez", subtitle: "Master Barbero", detail: "Cortes modernos" },
-                { id: "rusbel", title: "Rusbel Hernandez", subtitle: "Master Barbero", detail: "Atención al detalle" }
+                { id: "rusbel", title: "Rusbel Hernandez", subtitle: "Master Barbero", detail: "Atención al detalle", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777601004182-ilf1hmww.png" }
             ]
         }
       ]}

@@ -10,7 +10,7 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import TeamCardFive from '@/components/sections/team/TeamCardFive';
+import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User } from "lucide-react";
 
 export default function LandingPage() {
@@ -71,15 +71,20 @@ export default function LandingPage() {
   </div>
 
   <div id="team" data-section="team">
-    <TeamCardFive
+    <TeamCardSix
       title="Nuestro Equipo"
       animationType="blur-reveal"
+      gridVariant="three-columns-all-equal-width"
       textboxLayout="default"
       useInvertedBackground={false}
-      description="Nuestros expertos a tu servicio."
-      team={[
-        { id: "member1", name: "Carlos", role: "Master Barber" },
-        { id: "member2", name: "Luis", role: "Barber Expert" }
+      description="Nuestros maestros del oficio a tu servicio."
+      members={[
+        { id: "carlos", name: "Carlos Palancar", role: "Master Barber" },
+        { id: "erick", name: "Erick Cabrera", role: "Master Barbero" },
+        { id: "carlosjr", name: "Carlos Palancar Jr.", role: "Master Barbero" },
+        { id: "brian", name: "Brian Teran", role: "Master Barbero" },
+        { id: "jose", name: "Jose Fernandez", role: "Master Barbero" },
+        { id: "rusbel", name: "Rusbel Hernandez", role: "Master Barbero" }
       ]}
     />
   </div>

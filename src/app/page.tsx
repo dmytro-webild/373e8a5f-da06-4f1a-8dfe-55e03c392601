@@ -10,7 +10,7 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import TeamCardSix from '@/components/sections/team/TeamCardSix';
+import TeamCardEleven from '@/components/sections/team/TeamCardEleven';
 import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User } from "lucide-react";
 
 export default function LandingPage() {
@@ -71,20 +71,25 @@ export default function LandingPage() {
   </div>
 
   <div id="team" data-section="team">
-    <TeamCardSix
+    <TeamCardEleven
       title="Nuestro Equipo"
       animationType="blur-reveal"
-      gridVariant="three-columns-all-equal-width"
       textboxLayout="default"
       useInvertedBackground={false}
       description="Nuestros maestros del oficio a tu servicio."
-      members={[
-        { id: "carlos", name: "Carlos Palancar", role: "Master Barber" },
-        { id: "erick", name: "Erick Cabrera", role: "Master Barbero" },
-        { id: "carlosjr", name: "Carlos Palancar Jr.", role: "Master Barbero" },
-        { id: "brian", name: "Brian Teran", role: "Master Barbero" },
-        { id: "jose", name: "Jose Fernandez", role: "Master Barbero" },
-        { id: "rusbel", name: "Rusbel Hernandez", role: "Master Barbero" }
+      groups={[
+        { 
+            id: "g1", 
+            groupTitle: "Master Barbers", 
+            members: [
+                { id: "carlos", title: "Carlos Palancar", subtitle: "Master Barber", detail: "Experto en cortes clásicos" },
+                { id: "erick", title: "Erick Cabrera", subtitle: "Master Barbero", detail: "Especialista en degradados" },
+                { id: "carlosjr", title: "Carlos Palancar Jr.", subtitle: "Master Barbero", detail: "Estilista versátil" },
+                { id: "brian", title: "Brian Teran", subtitle: "Master Barbero", detail: "Técnico de barba" },
+                { id: "jose", title: "Jose Fernandez", subtitle: "Master Barbero", detail: "Cortes modernos" },
+                { id: "rusbel", title: "Rusbel Hernandez", subtitle: "Master Barbero", detail: "Atención al detalle" }
+            ]
+        }
       ]}
     />
   </div>

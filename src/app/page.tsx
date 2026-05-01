@@ -75,6 +75,8 @@ export default function LandingPage() {
       title="Nuestro Equipo"
       animationType="blur-reveal"
       textboxLayout="default"
+      useInvertedBackground={false}
+      description="Nuestros expertos a tu servicio."
       groups={[
         { 
           id: "barbers", 

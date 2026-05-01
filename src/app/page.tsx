@@ -37,7 +37,7 @@ export default function LandingPage() {
       ]}
       brandName="Palancar Barbershop"
       button={{ text: "305-824-9966", href: "tel:3058249966" }}
-      buttonClassName="min-w-[240px]"
+      buttonClassName="min-w-fit px-6"
     />
   </div>
 
@@ -96,6 +96,7 @@ export default function LandingPage() {
       ]}
       title="Menú de Precios"
       description="Servicios de calidad para ti."
+      planButtonClassName="whitespace-nowrap px-4"
     />
   </div>
 
@@ -125,6 +126,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       containerClassName="max-w-7xl mx-auto"
       contentClassName="max-w-7xl mx-auto"
+      buttonClassName="whitespace-nowrap px-6"
     />
   </div>
 

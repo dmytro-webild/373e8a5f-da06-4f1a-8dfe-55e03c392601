@@ -10,6 +10,7 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
+import TeamCardEleven from '@/components/sections/team/TeamCardEleven';
 import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User } from "lucide-react";
 
 export default function LandingPage() {
@@ -66,6 +67,24 @@ export default function LandingPage() {
         { type: "image", src: "http://img.b2bpic.net/free-photo/from-hands-shaving-neck_23-2147778916.jpg", alt: "barbero profesional cuidando al cliente" },
       ]}
       buttons={[{ text: "Reservar Cita", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }]}
+    />
+  </div>
+
+  <div id="team" data-section="team">
+    <TeamCardEleven 
+      title="Nuestro Equipo"
+      animationType="blur-reveal"
+      textboxLayout="default"
+      groups={[
+        { 
+          id: "barbers", 
+          groupTitle: "Expertos Barberos", 
+          members: [
+            { id: "member1", title: "Carlos", subtitle: "Master Barber", detail: "Más de 10 años de experiencia perfeccionando cortes clásicos y modernos." },
+            { id: "member2", title: "Luis", subtitle: "Barber Expert", detail: "Especialista en degradados y estilos urbanos de alta precisión." }
+          ] 
+        }
+      ]}
     />
   </div>
 

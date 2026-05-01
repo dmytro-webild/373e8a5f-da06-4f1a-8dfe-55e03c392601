@@ -46,7 +46,7 @@ export default function LandingPage() {
       logoText="Palancar Barbershop"
       description="Corte premium en el corazón de Hialeah. Mejore su estilo con maestros del oficio. Servicio de barbería diseñado para el hombre moderno."
       buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
-      imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=1"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777594381425-5bkzkhum.jpg"
       imageAlt="interior moderno de barbería"
     />
   </div>
@@ -134,7 +134,7 @@ export default function LandingPage() {
       title="Contáctanos hoy"
       description="Llámanos a nuestros números de atención: 305-824-9966 (Oficina) y 786-302-3671 (Celular)."
       mediaAnimation="slide-up"
-      imageSrc="http://img.b2bpic.net/free-photo/barber-with-scissors-barbershop_140725-7670.jpg?_wi=2"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777594381425-5bkzkhum.jpg"
     />
   </div>
 

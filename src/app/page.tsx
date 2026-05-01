@@ -10,7 +10,7 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import TeamCardEleven from '@/components/sections/team/TeamCardEleven';
+import TeamCardFive from '@/components/sections/team/TeamCardFive';
 import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User } from "lucide-react";
 
 export default function LandingPage() {
@@ -71,21 +71,15 @@ export default function LandingPage() {
   </div>
 
   <div id="team" data-section="team">
-    <TeamCardEleven 
+    <TeamCardFive
       title="Nuestro Equipo"
       animationType="blur-reveal"
       textboxLayout="default"
       useInvertedBackground={false}
       description="Nuestros expertos a tu servicio."
-      groups={[
-        { 
-          id: "barbers", 
-          groupTitle: "Expertos Barberos", 
-          members: [
-            { id: "member1", title: "Carlos", subtitle: "Master Barber", detail: "Más de 10 años de experiencia perfeccionando cortes clásicos y modernos." },
-            { id: "member2", title: "Luis", subtitle: "Barber Expert", detail: "Especialista en degradados y estilos urbanos de alta precisión." }
-          ] 
-        }
+      team={[
+        { id: "member1", name: "Carlos", role: "Master Barber" },
+        { id: "member2", name: "Luis", role: "Barber Expert" }
       ]}
     />
   </div>

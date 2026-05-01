@@ -10,9 +10,15 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User, Phone } from "lucide-react";
+import { Instagram, Scissors, Sparkles, Droplets, Zap, Eye, User } from "lucide-react";
 
 export default function LandingPage() {
+  const handleLinkClick = (href: string) => {
+    if (href?.startsWith('tel:')) {
+      window.location.href = href;
+    }
+  };
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-stagger"
@@ -36,7 +42,7 @@ export default function LandingPage() {
         { name: "Contacto", id: "contact" },
       ]}
       brandName="Palancar Barbershop"
-      button={{ text: "305-824-9966", href: "tel:3058249966" }}
+      button={{ text: "305-824-9966", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }}
       buttonClassName="min-w-fit px-3 text-xs md:text-sm"
     />
   </div>
@@ -45,7 +51,7 @@ export default function LandingPage() {
       <HeroLogo
       logoText="Palancar Barbershop"
       description="Corte premium en el corazón de Hialeah. Mejore su estilo con maestros del oficio. Servicio de barbería diseñado para el hombre moderno."
-      buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
+      buttons={[{ text: "Reservar Cita", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777601004182-ilf1hmww.png"
       imageAlt="interior moderno de barbería"
       buttonClassName="text-sm md:text-base"
@@ -59,7 +65,7 @@ export default function LandingPage() {
         { type: "text", content: "Tradición y Estilo Superior" },
         { type: "image", src: "http://img.b2bpic.net/free-photo/from-hands-shaving-neck_23-2147778916.jpg", alt: "barbero profesional cuidando al cliente" },
       ]}
-      buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
+      buttons={[{ text: "Reservar Cita", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }]}
     />
   </div>
 
@@ -69,13 +75,13 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       features={[
-        { icon: Scissors, title: "Corte de Pelo", description: "$25", button: { text: "Llamar", href: "tel:3058249966" } },
-        { icon: Sparkles, title: "Cortes", description: "$15", button: { text: "Llamar", href: "tel:3058249966" } },
-        { icon: Droplets, title: "Lavado de Cabeza", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
-        { icon: Zap, title: "Afeitado", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
-        { icon: User, title: "Barba", description: "$20", button: { text: "Llamar", href: "tel:3058249966" } },
-        { icon: Scissors, title: "Candado", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
-        { icon: Eye, title: "Cejas", description: "$10", button: { text: "Llamar", href: "tel:3058249966" } },
+        { icon: Scissors, title: "Corte de Pelo", description: "$25" },
+        { icon: Sparkles, title: "Cortes", description: "$15" },
+        { icon: Droplets, title: "Lavado de Cabeza", description: "$10" },
+        { icon: Zap, title: "Afeitado", description: "$10" },
+        { icon: User, title: "Barba", description: "$20" },
+        { icon: Scissors, title: "Candado", description: "$10" },
+        { icon: Eye, title: "Cejas", description: "$10" },
       ]}
       title="Nuestros Servicios"
       description="Servicios de barbería profesionales."
@@ -88,13 +94,13 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "p1", badge: "Corte", price: "$25", subtitle: "Corte de Pelo", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
-        { id: "p2", badge: "Cortes", price: "$15", subtitle: "Cortes", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
-        { id: "p3", badge: "Lavado", price: "$10", subtitle: "Lavado de Cabeza", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
-        { id: "p4", badge: "Afeitado", price: "$10", subtitle: "Afeitado", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
-        { id: "p5", badge: "Barba", price: "$20", subtitle: "Barba", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
-        { id: "p6", badge: "Candado", price: "$10", subtitle: "Candado", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
-        { id: "p7", badge: "Cejas", price: "$10", subtitle: "Cejas", buttons: [{ text: "Llamar", href: "tel:3058249966" }], features: [] },
+        { id: "p1", badge: "Corte", price: "$25", subtitle: "Corte de Pelo", buttons: [{ text: "Llamar", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }], features: [] },
+        { id: "p2", badge: "Cortes", price: "$15", subtitle: "Cortes", buttons: [{ text: "Llamar", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }], features: [] },
+        { id: "p3", badge: "Lavado", price: "$10", subtitle: "Lavado de Cabeza", buttons: [{ text: "Llamar", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }], features: [] },
+        { id: "p4", badge: "Afeitado", price: "$10", subtitle: "Afeitado", buttons: [{ text: "Llamar", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }], features: [] },
+        { id: "p5", badge: "Barba", price: "$20", subtitle: "Barba", buttons: [{ text: "Llamar", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }], features: [] },
+        { id: "p6", badge: "Candado", price: "$10", subtitle: "Candado", buttons: [{ text: "Llamar", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }], features: [] },
+        { id: "p7", badge: "Cejas", price: "$10", subtitle: "Cejas", buttons: [{ text: "Llamar", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }], features: [] },
       ]}
       title="Menú de Precios"
       description="Servicios de calidad para ti."
@@ -114,7 +120,7 @@ export default function LandingPage() {
       title="Información de Contacto"
       description="Llame para su próxima cita."
       faqsAnimation="slide-up"
-      buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
+      buttons={[{ text: "Reservar Cita", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") }]}
     />
   </div>
 
@@ -122,8 +128,8 @@ export default function LandingPage() {
     <ContactText 
       text="¿Listo para tu próximo corte? Llámanos hoy."
       buttons={[
-        { text: "305-824-9966 (Oficina)", href: "tel:3058249966" },
-        { text: "786-302-3671 (Celular)", href: "tel:7863023671" }
+        { text: "305-824-9966 (Oficina)", href: "tel:305-824-9966", onClick: () => handleLinkClick("tel:305-824-9966") },
+        { text: "786-302-3671 (Celular)", href: "tel:786-302-3671", onClick: () => handleLinkClick("tel:786-302-3671") }
       ]}
       background={{ variant: "sparkles-gradient" }}
       useInvertedBackground={true}

@@ -2,7 +2,6 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactSplit from '@/components/sections/contact/ContactSplit';
 import ContactText from '@/components/sections/contact/ContactText';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import FooterCard from '@/components/sections/footer/FooterCard';
@@ -38,6 +37,7 @@ export default function LandingPage() {
       ]}
       brandName="Palancar Barbershop"
       button={{ text: "305-824-9966", href: "tel:3058249966" }}
+      buttonClassName="min-w-[150px]"
     />
   </div>
 
@@ -123,20 +123,7 @@ export default function LandingPage() {
       ]}
       background={{ variant: "sparkles-gradient" }}
       useInvertedBackground={true}
-    />
-  </div>
-
-  <div id="contact" data-section="contact">
-      <ContactSplit
-      useInvertedBackground={false}
-      background={{ variant: "plain" }}
-      tag="Contacto"
-      title="Contáctanos hoy"
-      description="Llámanos a nuestros números de atención: 305-824-9966 (Oficina) y 786-302-3671 (Celular)."
-      mediaAnimation="slide-up"
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777594381425-5bkzkhum.jpg?_wi=2"
-      containerClassName="p-0 m-0"
-      contentClassName="p-0"
+      containerClassName="max-w-7xl mx-auto"
     />
   </div>
 

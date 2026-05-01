@@ -37,7 +37,7 @@ export default function LandingPage() {
       ]}
       brandName="Palancar Barbershop"
       button={{ text: "305-824-9966", href: "tel:3058249966" }}
-      buttonClassName="min-w-fit px-6"
+      buttonClassName="min-w-fit px-3 text-xs md:text-sm"
     />
   </div>
 
@@ -48,6 +48,7 @@ export default function LandingPage() {
       buttons={[{ text: "Reservar Cita", href: "tel:3058249966" }]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777594381425-5bkzkhum.jpg?_wi=1"
       imageAlt="interior moderno de barbería"
+      buttonClassName="text-sm md:text-base"
     />
   </div>
 
@@ -96,7 +97,7 @@ export default function LandingPage() {
       ]}
       title="Menú de Precios"
       description="Servicios de calidad para ti."
-      planButtonClassName="whitespace-nowrap px-4"
+      planButtonClassName="whitespace-nowrap text-xs md:text-sm px-3"
     />
   </div>
 
@@ -126,7 +127,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       containerClassName="max-w-7xl mx-auto"
       contentClassName="max-w-7xl mx-auto"
-      buttonClassName="whitespace-nowrap px-6"
+      buttonClassName="whitespace-nowrap px-4 text-sm"
     />
   </div>
 

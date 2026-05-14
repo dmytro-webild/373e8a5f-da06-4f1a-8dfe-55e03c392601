@@ -77,6 +77,7 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       description="Nuestros maestros del oficio a tu servicio."
+      memberImageClassName="object-center object-cover"
       groups={[
         { 
             id: "g1", 

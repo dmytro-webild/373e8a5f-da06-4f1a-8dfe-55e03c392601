@@ -83,14 +83,14 @@ export default function LandingPage() {
             id: "g1", 
             groupTitle: "Master Barbers", 
             members: [
-                { id: "carlos", title: "Carlos Palancar", subtitle: "Master Barber", detail: "Experto en cortes clásicos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-le45q4xz.png?_wi=1" },
-                { id: "erick", title: "Erick Cabrera", subtitle: "Master Barbero", detail: "Especialista en degradados", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-018sp65s.png?_wi=1" },
-                { id: "carlosjr", title: "Carlos Palancar Jr.", subtitle: "Master Barbero", detail: "Estilista versátil", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430003-zt0ail6t.png" },
-                { id: "brian", title: "Brian Teran", subtitle: "Master Barbero", detail: "Técnico de barba", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623430002-s664af23.png" },
-                { id: "jose", title: "Jose Fernandez", subtitle: "Master Barbero", detail: "Cortes modernos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777623398212-faml8059.png?_wi=1" },
-                { id: "rusbel", title: "Rusbel Hernandez", subtitle: "Master Barbero", detail: "Atención al detalle", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1777622706443-nt3xtwbz.png" },
-                { id: "isbel", title: "Isbel", subtitle: "Master Barbero", detail: "Experiencia y precisión", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778735314210-rzzb5kol.jpg" },
-                { id: "roner", title: "Roner", subtitle: "Master Barbero", detail: "Estilo y detalle", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778735369856-24eoz016.jpg" }
+                { id: "carlos", title: "Carlos Palancar", subtitle: "Master Barber", detail: "Experto en cortes clásicos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745852568-gfqtw62a.png" },
+                { id: "erick", title: "Erick Cabrera", subtitle: "Master Barbero", detail: "Especialista en degradados", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745806647-ur5twvd1.png" },
+                { id: "carlosjr", title: "Carlos Palancar Jr.", subtitle: "Master Barbero", detail: "Estilista versátil", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745852568-rxrrts2w.png" },
+                { id: "brian", title: "Brian Teran", subtitle: "Master Barbero", detail: "Técnico de barba", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745806647-ujgqu20s.png" },
+                { id: "jose", title: "Jose Fernandez", subtitle: "Master Barbero", detail: "Cortes modernos", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745806647-c8hik11a.png" },
+                { id: "rusbel", title: "Rusbel Hernandez", subtitle: "Master Barbero", detail: "Atención al detalle", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745806648-rjmndrll.png" },
+                { id: "isbel", title: "Isbel", subtitle: "Master Barbero", detail: "Experiencia y precisión", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745806647-vr7imyc2.png" },
+                { id: "roner", title: "Roner", subtitle: "Master Barbero", detail: "Estilo y detalle", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ApasF6ZFfKJ3lLObBgGARvGnPS/uploaded-1778745806647-wmafk0q6.png" }
             ]
         }
       ]}
